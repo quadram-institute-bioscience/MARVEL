@@ -1,5 +1,6 @@
 
-# MARVEL - Metagenomic Analysis and Retrieval of Viral Elements
+# MARVEL
+**Metagenomic Analysis and Retrieval of Viral Elements**
 
 MARVEL is a pipeline for recovery of complete phage genomes from whole community shotgun metagenomic sequencing data.  
 
@@ -12,19 +13,9 @@ Auxiliary script:
 
 ### Dependencies
 
-All scripts from this project were coded in [Python 3](https://www.python.org/). So, first of all, make sure you have it installed and updated.  
-MARVEL's main scrip (marvel_bins.py) requires Prokka and its dependencies to be installed:
-
-* [Prokka](https://github.com/tseemann/prokka) - Rapid Prokaryotic genome annotation.
-
-These Python libraries are required:
-
-* [Numpy](http://www.numpy.org/), [Scipy](https://www.scipy.org/) - Efficiently handling arrays and scientific computing
-* [Biopython](http://biopython.org/) - Handling biological sequences and records
-
-To install these Python libraries, just type: 
+To create a conda environment: 
 ```
-pip install -U numpy scipy biopython
+conda create -n marvel numpy scikit-learn prokka
 ```
 
 ### Installing
@@ -40,26 +31,16 @@ git clone https://github.com/LaboratorioBioinformatica/MARVEL
 Inside the directory where MARVEL was extracted (or cloned), you will need to download and set the models. 
 This is required only once and it is simple. Just run:
 ```
-python3 download_and_set_models.py
+python3 download_and_set_models.py [Destination_directory] [Temporary_Directory]
 ```
-All set!  
+
 Now, to run MARVEL type:
 ```
-python3 marvel_bins.py -i input_directory -t num_threads
+python3 marvel_bins.py -i input_directory -o output_directory [-d database_directory] [-t num_threads]
 ```
 
 Change 'input_directory' for the folder where bins are stored in fasta format and 'num_threads' for the number of CPU cores to be used. Several threads should be used for speed up prokka and hmm searches.  
-Results will be stored in the 'Results' folder inside the input directory.  
-Obs: You need to execute the scripts from the directory where MARVEL was extracted, i.e., MARVEL's root folder. 
 
-### Running the example datasets
-
-We provide a folder with example datasets containing mocking bins of RefSeq viral and bacterial genomes.  
-To try these examples, run:
-
-```
-python3 marvel_bins.py -i example_data/bins_8k_refseq -t 12
-```
 
 ### Additional scripts
 
