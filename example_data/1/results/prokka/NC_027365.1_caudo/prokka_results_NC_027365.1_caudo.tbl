@@ -1,0 +1,1046 @@
+>Feature gnl|X|FJJNNHDD_1
+299	63	gene
+			locus_tag	FJJNNHDD_00001
+299	63	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00001
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00001
+935	414	gene
+			locus_tag	FJJNNHDD_00002
+935	414	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00002
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00002
+1173	2438	gene
+			locus_tag	FJJNNHDD_00003
+1173	2438	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00003
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00003
+3237	2419	gene
+			locus_tag	FJJNNHDD_00004
+3237	2419	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00004
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00004
+3675	3322	gene
+			locus_tag	FJJNNHDD_00005
+3675	3322	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00005
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00005
+3812	4057	gene
+			locus_tag	FJJNNHDD_00006
+3812	4057	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00006
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00006
+4054	4242	gene
+			locus_tag	FJJNNHDD_00007
+4054	4242	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00007
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00007
+4247	4507	gene
+			locus_tag	FJJNNHDD_00008
+4247	4507	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00008
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00008
+4551	4733	gene
+			locus_tag	FJJNNHDD_00009
+4551	4733	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00009
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00009
+4730	5041	gene
+			locus_tag	FJJNNHDD_00010
+4730	5041	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00010
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00010
+5038	5349	gene
+			locus_tag	FJJNNHDD_00011
+5038	5349	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00011
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00011
+5342	5695	gene
+			locus_tag	FJJNNHDD_00012
+5342	5695	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00012
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00012
+5695	5934	gene
+			locus_tag	FJJNNHDD_00013
+5695	5934	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00013
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00013
+5938	6630	gene
+			locus_tag	FJJNNHDD_00014
+5938	6630	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00014
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00014
+6651	7022	gene
+			locus_tag	FJJNNHDD_00015
+6651	7022	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00015
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00015
+7019	7228	gene
+			locus_tag	FJJNNHDD_00016
+7019	7228	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00016
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00016
+7225	7446	gene
+			locus_tag	FJJNNHDD_00017
+7225	7446	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00017
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00017
+7539	7814	gene
+			locus_tag	FJJNNHDD_00018
+7539	7814	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00018
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00018
+>Feature gnl|X|FJJNNHDD_2
+78	1082	gene
+			locus_tag	FJJNNHDD_00019
+78	1082	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00019
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00019
+1104	1481	gene
+			locus_tag	FJJNNHDD_00020
+1104	1481	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00020
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00020
+1512	3122	gene
+			locus_tag	FJJNNHDD_00021
+1512	3122	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00021
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00021
+3122	3913	gene
+			locus_tag	FJJNNHDD_00022
+3122	3913	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00022
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00022
+3951	4349	gene
+			locus_tag	FJJNNHDD_00023
+3951	4349	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00023
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00023
+4346	4681	gene
+			locus_tag	FJJNNHDD_00024
+4346	4681	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00024
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00024
+4678	4938	gene
+			locus_tag	FJJNNHDD_00025
+4678	4938	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00025
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00025
+4925	6115	gene
+			locus_tag	FJJNNHDD_00026
+4925	6115	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00026
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00026
+6549	6875	gene
+			locus_tag	FJJNNHDD_00027
+6549	6875	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00027
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00027
+6907	7206	gene
+			locus_tag	FJJNNHDD_00028
+6907	7206	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00028
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00028
+7203	7505	gene
+			locus_tag	FJJNNHDD_00029
+7203	7505	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00029
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00029
+7498	7887	gene
+			locus_tag	FJJNNHDD_00030
+7498	7887	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00030
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00030
+>Feature gnl|X|FJJNNHDD_3
+26	661	gene
+			locus_tag	FJJNNHDD_00031
+26	661	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00031
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00031
+830	1291	gene
+			locus_tag	FJJNNHDD_00032
+830	1291	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00032
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00032
+1303	1779	gene
+			locus_tag	FJJNNHDD_00033
+1303	1779	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00033
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00033
+1776	2516	gene
+			locus_tag	FJJNNHDD_00034
+1776	2516	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00034
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00034
+2541	3419	gene
+			locus_tag	FJJNNHDD_00035
+2541	3419	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00035
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00035
+3416	3622	gene
+			locus_tag	FJJNNHDD_00036
+3416	3622	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00036
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00036
+3619	4122	gene
+			locus_tag	FJJNNHDD_00037
+3619	4122	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00037
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00037
+4167	4742	gene
+			locus_tag	FJJNNHDD_00038
+4167	4742	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00038
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00038
+4852	4962	gene
+			locus_tag	FJJNNHDD_00039
+4852	4962	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00039
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00039
+4992	5261	gene
+			locus_tag	FJJNNHDD_00040
+4992	5261	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00040
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00040
+5279	5656	gene
+			locus_tag	FJJNNHDD_00041
+5279	5656	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00041
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00041
+5653	5823	gene
+			locus_tag	FJJNNHDD_00042
+5653	5823	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00042
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00042
+5926	6159	gene
+			locus_tag	FJJNNHDD_00043
+5926	6159	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00043
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00043
+6188	6496	gene
+			locus_tag	FJJNNHDD_00044
+6188	6496	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00044
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00044
+6511	6666	gene
+			locus_tag	FJJNNHDD_00045
+6511	6666	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00045
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00045
+6669	7016	gene
+			locus_tag	FJJNNHDD_00046
+6669	7016	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00046
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00046
+7104	7895	gene
+			locus_tag	FJJNNHDD_00047
+7104	7895	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00047
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00047
+>Feature gnl|X|FJJNNHDD_4
+122	967	gene
+			locus_tag	FJJNNHDD_00048
+122	967	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00048
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00048
+971	1975	gene
+			locus_tag	FJJNNHDD_00049
+971	1975	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00049
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00049
+1997	2374	gene
+			locus_tag	FJJNNHDD_00050
+1997	2374	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00050
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00050
+2405	4015	gene
+			locus_tag	FJJNNHDD_00051
+2405	4015	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00051
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00051
+4015	4806	gene
+			locus_tag	FJJNNHDD_00052
+4015	4806	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00052
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00052
+4844	5242	gene
+			locus_tag	FJJNNHDD_00053
+4844	5242	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00053
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00053
+5239	5574	gene
+			locus_tag	FJJNNHDD_00054
+5239	5574	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00054
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00054
+5571	5831	gene
+			locus_tag	FJJNNHDD_00055
+5571	5831	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00055
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00055
+5818	7008	gene
+			locus_tag	FJJNNHDD_00056
+5818	7008	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00056
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00056
+7442	7768	gene
+			locus_tag	FJJNNHDD_00057
+7442	7768	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00057
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00057
+>Feature gnl|X|FJJNNHDD_5
+21	1874	gene
+			locus_tag	FJJNNHDD_00058
+21	1874	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00058
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00058
+1875	3008	gene
+			locus_tag	FJJNNHDD_00059
+1875	3008	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00059
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00059
+3008	4795	gene
+			locus_tag	FJJNNHDD_00060
+3008	4795	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00060
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00060
+4796	5314	gene
+			locus_tag	FJJNNHDD_00061
+4796	5314	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00061
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00061
+5311	6408	gene
+			locus_tag	FJJNNHDD_00062
+5311	6408	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00062
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00062
+6420	6665	gene
+			locus_tag	FJJNNHDD_00063
+6420	6665	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00063
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00063
+7656	6640	gene
+			locus_tag	FJJNNHDD_00064
+7656	6640	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00064
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00064
+>Feature gnl|X|FJJNNHDD_6
+43	312	gene
+			locus_tag	FJJNNHDD_00065
+43	312	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00065
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00065
+1111	293	gene
+			locus_tag	FJJNNHDD_00066
+1111	293	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00066
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00066
+1549	1196	gene
+			locus_tag	FJJNNHDD_00067
+1549	1196	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00067
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00067
+1686	1931	gene
+			locus_tag	FJJNNHDD_00068
+1686	1931	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00068
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00068
+1928	2116	gene
+			locus_tag	FJJNNHDD_00069
+1928	2116	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00069
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00069
+2121	2381	gene
+			locus_tag	FJJNNHDD_00070
+2121	2381	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00070
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00070
+2425	2607	gene
+			locus_tag	FJJNNHDD_00071
+2425	2607	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00071
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00071
+2604	2915	gene
+			locus_tag	FJJNNHDD_00072
+2604	2915	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00072
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00072
+2912	3223	gene
+			locus_tag	FJJNNHDD_00073
+2912	3223	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00073
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00073
+3216	3569	gene
+			locus_tag	FJJNNHDD_00074
+3216	3569	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00074
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00074
+3569	3808	gene
+			locus_tag	FJJNNHDD_00075
+3569	3808	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00075
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00075
+3812	4504	gene
+			locus_tag	FJJNNHDD_00076
+3812	4504	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00076
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00076
+4525	4896	gene
+			locus_tag	FJJNNHDD_00077
+4525	4896	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00077
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00077
+4893	5102	gene
+			locus_tag	FJJNNHDD_00078
+4893	5102	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00078
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00078
+5099	5320	gene
+			locus_tag	FJJNNHDD_00079
+5099	5320	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00079
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00079
+5413	5688	gene
+			locus_tag	FJJNNHDD_00080
+5413	5688	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00080
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00080
+5768	6364	gene
+			locus_tag	FJJNNHDD_00081
+5768	6364	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00081
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00081
+6364	6528	gene
+			locus_tag	FJJNNHDD_00082
+6364	6528	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00082
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00082
+6558	7388	gene
+			locus_tag	FJJNNHDD_00083
+6558	7388	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00083
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00083
+7388	7531	gene
+			locus_tag	FJJNNHDD_00084
+7388	7531	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00084
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00084
+7528	7746	gene
+			locus_tag	FJJNNHDD_00085
+7528	7746	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00085
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00085
+>Feature gnl|X|FJJNNHDD_7
+136	996	gene
+			locus_tag	FJJNNHDD_00086
+136	996	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00086
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00086
+996	1787	gene
+			locus_tag	FJJNNHDD_00087
+996	1787	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00087
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00087
+1825	2223	gene
+			locus_tag	FJJNNHDD_00088
+1825	2223	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00088
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00088
+2220	2555	gene
+			locus_tag	FJJNNHDD_00089
+2220	2555	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00089
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00089
+2552	2812	gene
+			locus_tag	FJJNNHDD_00090
+2552	2812	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00090
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00090
+2799	3989	gene
+			locus_tag	FJJNNHDD_00091
+2799	3989	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00091
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00091
+4423	4749	gene
+			locus_tag	FJJNNHDD_00092
+4423	4749	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00092
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00092
+4781	5080	gene
+			locus_tag	FJJNNHDD_00093
+4781	5080	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00093
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00093
+5077	5379	gene
+			locus_tag	FJJNNHDD_00094
+5077	5379	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00094
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00094
+5372	5761	gene
+			locus_tag	FJJNNHDD_00095
+5372	5761	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00095
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00095
+5758	6189	gene
+			locus_tag	FJJNNHDD_00096
+5758	6189	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00096
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00096
+6809	6288	gene
+			locus_tag	FJJNNHDD_00097
+6809	6288	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00097
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00097
+7919	6927	gene
+			locus_tag	FJJNNHDD_00098
+7919	6927	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00098
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00098
+>Feature gnl|X|FJJNNHDD_8
+107	307	gene
+			locus_tag	FJJNNHDD_00099
+107	307	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00099
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00099
+399	3020	gene
+			locus_tag	FJJNNHDD_00100
+399	3020	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00100
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00100
+3189	3650	gene
+			locus_tag	FJJNNHDD_00101
+3189	3650	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00101
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00101
+3662	4138	gene
+			locus_tag	FJJNNHDD_00102
+3662	4138	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00102
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00102
+4135	4875	gene
+			locus_tag	FJJNNHDD_00103
+4135	4875	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00103
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00103
+4900	5778	gene
+			locus_tag	FJJNNHDD_00104
+4900	5778	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00104
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00104
+5775	5981	gene
+			locus_tag	FJJNNHDD_00105
+5775	5981	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00105
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00105
+5978	6481	gene
+			locus_tag	FJJNNHDD_00106
+5978	6481	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00106
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00106
+6526	7101	gene
+			locus_tag	FJJNNHDD_00107
+6526	7101	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00107
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00107
+7211	7321	gene
+			locus_tag	FJJNNHDD_00108
+7211	7321	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00108
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00108
+7351	7620	gene
+			locus_tag	FJJNNHDD_00109
+7351	7620	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00109
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00109
+>Feature gnl|X|FJJNNHDD_9
+103	285	gene
+			locus_tag	FJJNNHDD_00110
+103	285	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00110
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00110
+282	593	gene
+			locus_tag	FJJNNHDD_00111
+282	593	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00111
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00111
+590	901	gene
+			locus_tag	FJJNNHDD_00112
+590	901	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00112
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00112
+894	1247	gene
+			locus_tag	FJJNNHDD_00113
+894	1247	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00113
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00113
+1247	1486	gene
+			locus_tag	FJJNNHDD_00114
+1247	1486	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00114
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00114
+1490	2182	gene
+			locus_tag	FJJNNHDD_00115
+1490	2182	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00115
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00115
+2203	2574	gene
+			locus_tag	FJJNNHDD_00116
+2203	2574	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00116
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00116
+2571	2780	gene
+			locus_tag	FJJNNHDD_00117
+2571	2780	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00117
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00117
+2777	2998	gene
+			locus_tag	FJJNNHDD_00118
+2777	2998	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00118
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00118
+3091	3366	gene
+			locus_tag	FJJNNHDD_00119
+3091	3366	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00119
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00119
+3446	4042	gene
+			locus_tag	FJJNNHDD_00120
+3446	4042	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00120
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00120
+4042	4206	gene
+			locus_tag	FJJNNHDD_00121
+4042	4206	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00121
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00121
+4203	5066	gene
+			locus_tag	FJJNNHDD_00122
+4203	5066	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00122
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00122
+5066	5209	gene
+			locus_tag	FJJNNHDD_00123
+5066	5209	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00123
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00123
+5206	5424	gene
+			locus_tag	FJJNNHDD_00124
+5206	5424	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00124
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00124
+5421	5702	gene
+			locus_tag	FJJNNHDD_00125
+5421	5702	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00125
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00125
+5699	5815	gene
+			locus_tag	FJJNNHDD_00126
+5699	5815	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00126
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00126
+5886	6554	gene
+			locus_tag	FJJNNHDD_00127
+5886	6554	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00127
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00127
+6662	6925	gene
+			locus_tag	FJJNNHDD_00128
+6662	6925	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00128
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00128
+6922	7767	gene
+			locus_tag	FJJNNHDD_00129
+6922	7767	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00129
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00129
+7767	7937	gene
+			locus_tag	FJJNNHDD_00130
+7767	7937	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00130
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00130
+>Feature gnl|X|FJJNNHDD_10
+15	290	gene
+			locus_tag	FJJNNHDD_00131
+15	290	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00131
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00131
+315	1193	gene
+			locus_tag	FJJNNHDD_00132
+315	1193	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00132
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00132
+1190	1396	gene
+			locus_tag	FJJNNHDD_00133
+1190	1396	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00133
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00133
+1393	1896	gene
+			locus_tag	FJJNNHDD_00134
+1393	1896	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00134
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00134
+1941	2516	gene
+			locus_tag	FJJNNHDD_00135
+1941	2516	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00135
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00135
+2626	2736	gene
+			locus_tag	FJJNNHDD_00136
+2626	2736	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00136
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00136
+2766	3035	gene
+			locus_tag	FJJNNHDD_00137
+2766	3035	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00137
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00137
+3053	3430	gene
+			locus_tag	FJJNNHDD_00138
+3053	3430	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00138
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00138
+3427	3597	gene
+			locus_tag	FJJNNHDD_00139
+3427	3597	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00139
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00139
+3700	3933	gene
+			locus_tag	FJJNNHDD_00140
+3700	3933	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00140
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00140
+3962	4270	gene
+			locus_tag	FJJNNHDD_00141
+3962	4270	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00141
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00141
+4285	4440	gene
+			locus_tag	FJJNNHDD_00142
+4285	4440	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00142
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00142
+4443	4790	gene
+			locus_tag	FJJNNHDD_00143
+4443	4790	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00143
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00143
+4878	5669	gene
+			locus_tag	FJJNNHDD_00144
+4878	5669	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00144
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00144
+5734	6441	gene
+			locus_tag	FJJNNHDD_00145
+5734	6441	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00145
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00145
+6528	7235	gene
+			locus_tag	FJJNNHDD_00146
+6528	7235	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00146
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00146
+7406	7618	gene
+			locus_tag	FJJNNHDD_00147
+7406	7618	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00147
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00147
+7622	7927	gene
+			locus_tag	FJJNNHDD_00148
+7622	7927	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	FJJNNHDD_00148
+			product	unannotated protein
+			protein_id	gnl|X|FJJNNHDD_00148

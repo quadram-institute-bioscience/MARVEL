@@ -1,0 +1,321 @@
+Discrepancy Report Results
+
+Summary
+DISC_SOURCE_QUALS_ASNDISC:strain (all present, all same)
+DISC_SOURCE_QUALS_ASNDISC:taxname (all present, all same)
+DISC_FEATURE_COUNT:gene: 110 present
+DISC_FEATURE_COUNT:CDS: 110 present
+DISC_COUNT_NUCLEOTIDES:10 nucleotide Bioseqs are present
+OVERLAPPING_GENES:39 genes overlap another gene on the same strand.
+OVERLAPPING_CDS:39 coding regions overlap another coding region with a similar or identical name.
+DISC_QUALITY_SCORES:Quality scores are missing on all sequences.
+ONCALLER_COMMENT_PRESENT:10 comment descriptors were found (all same)
+MISSING_GENOMEASSEMBLY_COMMENTS:10 bioseqs are missing GenomeAssembly structured comments
+MOLTYPE_NOT_MRNA:10 molecule types are not set as mRNA.
+TECHNIQUE_NOT_TSA:10 technique are not set as TSA
+MISSING_STRUCTURED_COMMENT:10 sequences do not include structured comments.
+MISSING_PROJECT:120 sequences do not include project.
+DISC_INCONSISTENT_MOLINFO_TECH:Molinfo Technique Report (some missing, all same)
+
+
+Detailed Report
+
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::strain (all present, all same)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::10 sources have 'strain' for strain
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::taxname (all present, all same)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::10 sources have 'Genus species' for taxname
+DiscRep_ALL:DISC_FEATURE_COUNT::gene: 110 present
+DiscRep_ALL:DISC_FEATURE_COUNT::CDS: 110 present
+DiscRep_ALL:DISC_COUNT_NUCLEOTIDES::10 nucleotide Bioseqs are present
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_1 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_2 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_3 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_4 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_5 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_6 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_7 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_8 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_9 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_10 (length 8000)
+
+DiscRep_ALL:OVERLAPPING_GENES::39 genes overlap another gene on the same strand.
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00005	HOGMDOJJ_1:5851-6108	HOGMDOJJ_00005
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00006	HOGMDOJJ_1:6108-6896	HOGMDOJJ_00006
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00008	HOGMDOJJ_2:37-1443	HOGMDOJJ_00008
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00009	HOGMDOJJ_2:1440-2765	HOGMDOJJ_00009
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00014	HOGMDOJJ_2:5651-5998	HOGMDOJJ_00014
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00015	HOGMDOJJ_2:5998-6294	HOGMDOJJ_00015
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00016	HOGMDOJJ_2:6291-6662	HOGMDOJJ_00016
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00035	HOGMDOJJ_4:c4763-3717	HOGMDOJJ_00035
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00036	HOGMDOJJ_4:c4957-4760	HOGMDOJJ_00036
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00037	HOGMDOJJ_4:c5504-4941	HOGMDOJJ_00037
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00038	HOGMDOJJ_4:c6067-5501	HOGMDOJJ_00038
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00040	HOGMDOJJ_4:c7340-6981	HOGMDOJJ_00040
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00041	HOGMDOJJ_4:c7984-7337	HOGMDOJJ_00041
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00043	HOGMDOJJ_5:c1320-964	HOGMDOJJ_00043
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00044	HOGMDOJJ_5:c2087-1320	HOGMDOJJ_00044
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00046	HOGMDOJJ_5:c3152-2742	HOGMDOJJ_00046
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00047	HOGMDOJJ_5:c4096-3149	HOGMDOJJ_00047
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00048	HOGMDOJJ_5:c4449-4096	HOGMDOJJ_00048
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00049	HOGMDOJJ_5:c4758-4558	HOGMDOJJ_00049
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00050	HOGMDOJJ_5:c4982-4755	HOGMDOJJ_00050
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00056	HOGMDOJJ_6:1937-2194	HOGMDOJJ_00056
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00057	HOGMDOJJ_6:2194-2982	HOGMDOJJ_00057
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00067	HOGMDOJJ_7:1737-2084	HOGMDOJJ_00067
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00068	HOGMDOJJ_7:2084-2380	HOGMDOJJ_00068
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00069	HOGMDOJJ_7:2377-2748	HOGMDOJJ_00069
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00081	HOGMDOJJ_8:c3680-2634	HOGMDOJJ_00081
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00082	HOGMDOJJ_8:c3874-3677	HOGMDOJJ_00082
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00083	HOGMDOJJ_8:c4421-3858	HOGMDOJJ_00083
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00084	HOGMDOJJ_8:c4984-4418	HOGMDOJJ_00084
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00086	HOGMDOJJ_8:c6257-5898	HOGMDOJJ_00086
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00087	HOGMDOJJ_8:c7117-6254	HOGMDOJJ_00087
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00095	HOGMDOJJ_9:6650-6907	HOGMDOJJ_00095
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00096	HOGMDOJJ_9:6907-7695	HOGMDOJJ_00096
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00103	HOGMDOJJ_10:c3931-2885	HOGMDOJJ_00103
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00104	HOGMDOJJ_10:c4125-3928	HOGMDOJJ_00104
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00105	HOGMDOJJ_10:c4672-4109	HOGMDOJJ_00105
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00106	HOGMDOJJ_10:c5235-4669	HOGMDOJJ_00106
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00108	HOGMDOJJ_10:c6508-6149	HOGMDOJJ_00108
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:Gene	HOGMDOJJ_00109	HOGMDOJJ_10:c7368-6505	HOGMDOJJ_00109
+
+DiscRep_ALL:OVERLAPPING_CDS::39 coding regions overlap another coding region with a similar or identical name.
+DiscRep_SUB:OVERLAPPING_CDS::39 coding regions overlap another coding region with a similar or identical name that do not have the appropriate note text
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_1:5851-6108	HOGMDOJJ_00005
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_1:6108-6896	HOGMDOJJ_00006
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_2:37-1443	HOGMDOJJ_00008
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_2:1440-2765	HOGMDOJJ_00009
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_2:5651-5998	HOGMDOJJ_00014
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_2:5998-6294	HOGMDOJJ_00015
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_2:6291-6662	HOGMDOJJ_00016
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_4:c4763-3717	HOGMDOJJ_00035
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_4:c4957-4760	HOGMDOJJ_00036
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_4:c5504-4941	HOGMDOJJ_00037
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_4:c6067-5501	HOGMDOJJ_00038
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_4:c7340-6981	HOGMDOJJ_00040
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_4:c7984-7337	HOGMDOJJ_00041
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_5:c1320-964	HOGMDOJJ_00043
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_5:c2087-1320	HOGMDOJJ_00044
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_5:c3152-2742	HOGMDOJJ_00046
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_5:c4096-3149	HOGMDOJJ_00047
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_5:c4449-4096	HOGMDOJJ_00048
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_5:c4758-4558	HOGMDOJJ_00049
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_5:c4982-4755	HOGMDOJJ_00050
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_6:1937-2194	HOGMDOJJ_00056
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_6:2194-2982	HOGMDOJJ_00057
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_7:1737-2084	HOGMDOJJ_00067
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_7:2084-2380	HOGMDOJJ_00068
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_7:2377-2748	HOGMDOJJ_00069
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_8:c3680-2634	HOGMDOJJ_00081
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_8:c3874-3677	HOGMDOJJ_00082
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_8:c4421-3858	HOGMDOJJ_00083
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_8:c4984-4418	HOGMDOJJ_00084
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_8:c6257-5898	HOGMDOJJ_00086
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_8:c7117-6254	HOGMDOJJ_00087
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_9:6650-6907	HOGMDOJJ_00095
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_9:6907-7695	HOGMDOJJ_00096
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_10:c3931-2885	HOGMDOJJ_00103
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_10:c4125-3928	HOGMDOJJ_00104
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_10:c4672-4109	HOGMDOJJ_00105
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_10:c5235-4669	HOGMDOJJ_00106
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_10:c6508-6149	HOGMDOJJ_00108
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:CDS	unannotated protein	HOGMDOJJ_10:c7368-6505	HOGMDOJJ_00109
+
+DiscRep_ALL:DISC_QUALITY_SCORES::Quality scores are missing on all sequences.
+
+DiscRep_ALL:ONCALLER_COMMENT_PRESENT::10 comment descriptors were found (all same)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_1:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_2:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_3:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_4:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_5:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_6:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_7:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_8:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_9:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_10:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+
+DiscRep_ALL:MISSING_GENOMEASSEMBLY_COMMENTS::10 bioseqs are missing GenomeAssembly structured comments
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_1 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_2 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_3 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_4 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_5 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_6 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_7 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_8 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_9 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_10 (length 8000)
+
+DiscRep_ALL:MOLTYPE_NOT_MRNA::10 molecule types are not set as mRNA.
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_1 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_2 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_3 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_4 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_5 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_6 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_7 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_8 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_9 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_10 (length 8000)
+
+DiscRep_ALL:TECHNIQUE_NOT_TSA::10 technique are not set as TSA
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_1 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_2 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_3 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_4 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_5 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_6 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_7 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_8 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_9 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_10 (length 8000)
+
+DiscRep_ALL:MISSING_STRUCTURED_COMMENT::10 sequences do not include structured comments.
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_1 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_2 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_3 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_4 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_5 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_6 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_7 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_8 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_9 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_10 (length 8000)
+
+DiscRep_ALL:MISSING_PROJECT::120 sequences do not include project.
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_1 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00001 (length 921)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00002 (length 313)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00003 (length 385)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00004 (length 272)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00005 (length 85)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00006 (length 262)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00007 (length 285)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_2 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00008 (length 468)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00009 (length 441)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00010 (length 251)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00011 (length 183)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00012 (length 315)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00013 (length 153)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00014 (length 115)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00015 (length 98)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00016 (length 123)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00017 (length 213)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00018 (length 98)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_3 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00019 (length 110)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00020 (length 213)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00021 (length 98)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00022 (length 95)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00023 (length 921)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00024 (length 313)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00025 (length 385)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00026 (length 272)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00027 (length 85)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_4 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00028 (length 79)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00029 (length 284)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00030 (length 132)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00031 (length 170)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00032 (length 132)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00033 (length 94)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00034 (length 106)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00035 (length 348)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00036 (length 65)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00037 (length 187)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00038 (length 188)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00039 (length 241)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00040 (length 119)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00041 (length 215)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_5 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00042 (length 241)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00043 (length 118)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00044 (length 255)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00045 (length 153)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00046 (length 136)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00047 (length 315)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00048 (length 117)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00049 (length 66)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00050 (length 75)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00051 (length 177)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00052 (length 103)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00053 (length 102)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_6 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00054 (length 343)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00055 (length 272)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00056 (length 85)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00057 (length 262)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00058 (length 285)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00059 (length 132)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00060 (length 170)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00061 (length 61)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00062 (length 348)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00063 (length 251)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_7 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00064 (length 73)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00065 (length 315)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00066 (length 153)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00067 (length 115)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00068 (length 98)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00069 (length 123)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00070 (length 213)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00071 (length 98)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00072 (length 95)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00073 (length 921)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00074 (length 313)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_8 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00075 (length 104)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00076 (length 132)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00077 (length 170)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00078 (length 132)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00079 (length 94)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00080 (length 106)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00081 (length 348)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00082 (length 65)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00083 (length 187)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00084 (length 188)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00085 (length 241)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00086 (length 119)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00087 (length 287)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00088 (length 153)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_9 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00089 (length 98)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00090 (length 95)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00091 (length 921)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00092 (length 313)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00093 (length 385)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00094 (length 272)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00095 (length 85)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00096 (length 262)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_10 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00097 (length 104)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00098 (length 132)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00099 (length 170)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00100 (length 132)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00101 (length 94)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00102 (length 106)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00103 (length 348)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00104 (length 65)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00105 (length 187)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00106 (length 188)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00107 (length 241)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00108 (length 119)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00109 (length 287)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_00110 (length 153)
+
+DiscRep_ALL:DISC_INCONSISTENT_MOLINFO_TECH::Molinfo Technique Report (some missing, all same)
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::technique (all missing)
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::10 Molinfos are missing field technique
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_1 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_2 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_3 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_4 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_5 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_6 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_7 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_8 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_9 (length 8000)
+example_data/1/results/prokka/NC_027361.1_caudo/prokka_results_NC_027361.1_caudo:X:HOGMDOJJ_10 (length 8000)
+

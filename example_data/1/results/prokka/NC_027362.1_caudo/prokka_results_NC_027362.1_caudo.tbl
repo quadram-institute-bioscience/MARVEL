@@ -1,0 +1,850 @@
+>Feature gnl|X|PJIMHBMA_1
+22	426	gene
+			locus_tag	PJIMHBMA_00001
+22	426	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00001
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00001
+536	1096	gene
+			locus_tag	PJIMHBMA_00002
+536	1096	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00002
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00002
+1103	2050	gene
+			locus_tag	PJIMHBMA_00003
+1103	2050	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00003
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00003
+2094	2555	gene
+			locus_tag	PJIMHBMA_00004
+2094	2555	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00004
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00004
+2557	2904	gene
+			locus_tag	PJIMHBMA_00005
+2557	2904	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00005
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00005
+2912	3202	gene
+			locus_tag	PJIMHBMA_00006
+2912	3202	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00006
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00006
+3199	3570	gene
+			locus_tag	PJIMHBMA_00007
+3199	3570	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00007
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00007
+3622	4254	gene
+			locus_tag	PJIMHBMA_00008
+3622	4254	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00008
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00008
+4282	4578	gene
+			locus_tag	PJIMHBMA_00009
+4282	4578	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00009
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00009
+4677	4964	gene
+			locus_tag	PJIMHBMA_00010
+4677	4964	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00010
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00010
+4972	7737	gene
+			locus_tag	PJIMHBMA_00011
+4972	7737	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00011
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00011
+>Feature gnl|X|PJIMHBMA_2
+32	1033	gene
+			locus_tag	PJIMHBMA_00012
+32	1033	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00012
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00012
+1040	1795	gene
+			locus_tag	PJIMHBMA_00013
+1040	1795	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00013
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00013
+1905	2465	gene
+			locus_tag	PJIMHBMA_00014
+1905	2465	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00014
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00014
+2472	3419	gene
+			locus_tag	PJIMHBMA_00015
+2472	3419	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00015
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00015
+3463	3924	gene
+			locus_tag	PJIMHBMA_00016
+3463	3924	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00016
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00016
+3926	4273	gene
+			locus_tag	PJIMHBMA_00017
+3926	4273	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00017
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00017
+4293	4571	gene
+			locus_tag	PJIMHBMA_00018
+4293	4571	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00018
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00018
+4568	4939	gene
+			locus_tag	PJIMHBMA_00019
+4568	4939	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00019
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00019
+4988	5623	gene
+			locus_tag	PJIMHBMA_00020
+4988	5623	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00020
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00020
+5651	5947	gene
+			locus_tag	PJIMHBMA_00021
+5651	5947	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00021
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00021
+6046	6333	gene
+			locus_tag	PJIMHBMA_00022
+6046	6333	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00022
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00022
+7336	6323	gene
+			locus_tag	PJIMHBMA_00023
+7336	6323	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00023
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00023
+>Feature gnl|X|PJIMHBMA_3
+65	184	gene
+			locus_tag	PJIMHBMA_00024
+65	184	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00024
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00024
+200	1147	gene
+			locus_tag	PJIMHBMA_00025
+200	1147	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00025
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00025
+1155	2312	gene
+			locus_tag	PJIMHBMA_00026
+1155	2312	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00026
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00026
+2329	3147	gene
+			locus_tag	PJIMHBMA_00027
+2329	3147	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00027
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00027
+3192	3455	gene
+			locus_tag	PJIMHBMA_00028
+3192	3455	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00028
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00028
+3467	4264	gene
+			locus_tag	PJIMHBMA_00029
+3467	4264	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00029
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00029
+4315	5172	gene
+			locus_tag	PJIMHBMA_00030
+4315	5172	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00030
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00030
+5179	5577	gene
+			locus_tag	PJIMHBMA_00031
+5179	5577	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00031
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00031
+6157	5663	gene
+			locus_tag	PJIMHBMA_00032
+6157	5663	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00032
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00032
+6470	6162	gene
+			locus_tag	PJIMHBMA_00033
+6470	6162	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00033
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00033
+6624	6797	gene
+			locus_tag	PJIMHBMA_00034
+6624	6797	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00034
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00034
+7343	7735	gene
+			locus_tag	PJIMHBMA_00035
+7343	7735	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00035
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00035
+>Feature gnl|X|PJIMHBMA_4
+118	873	gene
+			locus_tag	PJIMHBMA_00036
+118	873	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00036
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00036
+983	1543	gene
+			locus_tag	PJIMHBMA_00037
+983	1543	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00037
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00037
+1550	2497	gene
+			locus_tag	PJIMHBMA_00038
+1550	2497	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00038
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00038
+2541	3002	gene
+			locus_tag	PJIMHBMA_00039
+2541	3002	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00039
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00039
+3004	3351	gene
+			locus_tag	PJIMHBMA_00040
+3004	3351	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00040
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00040
+3359	3649	gene
+			locus_tag	PJIMHBMA_00041
+3359	3649	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00041
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00041
+3646	4017	gene
+			locus_tag	PJIMHBMA_00042
+3646	4017	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00042
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00042
+4069	4701	gene
+			locus_tag	PJIMHBMA_00043
+4069	4701	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00043
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00043
+4729	5025	gene
+			locus_tag	PJIMHBMA_00044
+4729	5025	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00044
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00044
+5124	5411	gene
+			locus_tag	PJIMHBMA_00045
+5124	5411	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00045
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00045
+6414	5401	gene
+			locus_tag	PJIMHBMA_00046
+6414	5401	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00046
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00046
+7869	7135	gene
+			locus_tag	PJIMHBMA_00047
+7869	7135	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00047
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00047
+>Feature gnl|X|PJIMHBMA_5
+48	728	gene
+			locus_tag	PJIMHBMA_00048
+48	728	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00048
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00048
+773	1036	gene
+			locus_tag	PJIMHBMA_00049
+773	1036	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00049
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00049
+1048	1845	gene
+			locus_tag	PJIMHBMA_00050
+1048	1845	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00050
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00050
+1896	2753	gene
+			locus_tag	PJIMHBMA_00051
+1896	2753	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00051
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00051
+2760	3158	gene
+			locus_tag	PJIMHBMA_00052
+2760	3158	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00052
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00052
+3738	3244	gene
+			locus_tag	PJIMHBMA_00053
+3738	3244	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00053
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00053
+4141	3743	gene
+			locus_tag	PJIMHBMA_00054
+4141	3743	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00054
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00054
+4420	4145	gene
+			locus_tag	PJIMHBMA_00055
+4420	4145	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00055
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00055
+4752	4432	gene
+			locus_tag	PJIMHBMA_00056
+4752	4432	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00056
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00056
+5802	4762	gene
+			locus_tag	PJIMHBMA_00057
+5802	4762	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00057
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00057
+5993	5799	gene
+			locus_tag	PJIMHBMA_00058
+5993	5799	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00058
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00058
+6534	5977	gene
+			locus_tag	PJIMHBMA_00059
+6534	5977	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00059
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00059
+7097	6531	gene
+			locus_tag	PJIMHBMA_00060
+7097	6531	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00060
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00060
+7820	7149	gene
+			locus_tag	PJIMHBMA_00061
+7820	7149	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00061
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00061
+>Feature gnl|X|PJIMHBMA_6
+12	176	gene
+			locus_tag	PJIMHBMA_00062
+12	176	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00062
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00062
+184	2949	gene
+			locus_tag	PJIMHBMA_00063
+184	2949	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00063
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00063
+2965	3912	gene
+			locus_tag	PJIMHBMA_00064
+2965	3912	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00064
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00064
+3920	5077	gene
+			locus_tag	PJIMHBMA_00065
+3920	5077	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00065
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00065
+5094	5912	gene
+			locus_tag	PJIMHBMA_00066
+5094	5912	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00066
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00066
+5957	6220	gene
+			locus_tag	PJIMHBMA_00067
+5957	6220	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00067
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00067
+6232	7029	gene
+			locus_tag	PJIMHBMA_00068
+6232	7029	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00068
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00068
+7080	7937	gene
+			locus_tag	PJIMHBMA_00069
+7080	7937	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00069
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00069
+>Feature gnl|X|PJIMHBMA_7
+43	1554	gene
+			locus_tag	PJIMHBMA_00070
+43	1554	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00070
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00070
+1551	2876	gene
+			locus_tag	PJIMHBMA_00071
+1551	2876	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00071
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00071
+2883	3638	gene
+			locus_tag	PJIMHBMA_00072
+2883	3638	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00072
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00072
+3748	4308	gene
+			locus_tag	PJIMHBMA_00073
+3748	4308	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00073
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00073
+4315	5262	gene
+			locus_tag	PJIMHBMA_00074
+4315	5262	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00074
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00074
+5306	5767	gene
+			locus_tag	PJIMHBMA_00075
+5306	5767	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00075
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00075
+5769	6116	gene
+			locus_tag	PJIMHBMA_00076
+5769	6116	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00076
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00076
+6136	6414	gene
+			locus_tag	PJIMHBMA_00077
+6136	6414	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00077
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00077
+6411	6782	gene
+			locus_tag	PJIMHBMA_00078
+6411	6782	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00078
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00078
+6834	7466	gene
+			locus_tag	PJIMHBMA_00079
+6834	7466	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00079
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00079
+7494	7790	gene
+			locus_tag	PJIMHBMA_00080
+7494	7790	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00080
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00080
+>Feature gnl|X|PJIMHBMA_8
+89	688	gene
+			locus_tag	PJIMHBMA_00081
+89	688	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00081
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00081
+739	1596	gene
+			locus_tag	PJIMHBMA_00082
+739	1596	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00082
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00082
+1603	2001	gene
+			locus_tag	PJIMHBMA_00083
+1603	2001	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00083
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00083
+2581	2087	gene
+			locus_tag	PJIMHBMA_00084
+2581	2087	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00084
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00084
+2984	2586	gene
+			locus_tag	PJIMHBMA_00085
+2984	2586	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00085
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00085
+3263	2988	gene
+			locus_tag	PJIMHBMA_00086
+3263	2988	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00086
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00086
+3595	3275	gene
+			locus_tag	PJIMHBMA_00087
+3595	3275	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00087
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00087
+4645	3605	gene
+			locus_tag	PJIMHBMA_00088
+4645	3605	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00088
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00088
+4836	4642	gene
+			locus_tag	PJIMHBMA_00089
+4836	4642	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00089
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00089
+5377	4820	gene
+			locus_tag	PJIMHBMA_00090
+5377	4820	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00090
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00090
+5940	5374	gene
+			locus_tag	PJIMHBMA_00091
+5940	5374	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00091
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00091
+6663	5992	gene
+			locus_tag	PJIMHBMA_00092
+6663	5992	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00092
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00092
+6975	7151	gene
+			locus_tag	PJIMHBMA_00093
+6975	7151	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00093
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00093
+7984	7127	gene
+			locus_tag	PJIMHBMA_00094
+7984	7127	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00094
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00094
+>Feature gnl|X|PJIMHBMA_9
+477	202	gene
+			locus_tag	PJIMHBMA_00095
+477	202	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00095
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00095
+809	489	gene
+			locus_tag	PJIMHBMA_00096
+809	489	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00096
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00096
+1859	819	gene
+			locus_tag	PJIMHBMA_00097
+1859	819	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00097
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00097
+2050	1856	gene
+			locus_tag	PJIMHBMA_00098
+2050	1856	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00098
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00098
+2591	2034	gene
+			locus_tag	PJIMHBMA_00099
+2591	2034	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00099
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00099
+3154	2588	gene
+			locus_tag	PJIMHBMA_00100
+3154	2588	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00100
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00100
+3877	3206	gene
+			locus_tag	PJIMHBMA_00101
+3877	3206	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00101
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00101
+4189	4365	gene
+			locus_tag	PJIMHBMA_00102
+4189	4365	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00102
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00102
+5294	4341	gene
+			locus_tag	PJIMHBMA_00103
+5294	4341	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00103
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00103
+5799	5335	gene
+			locus_tag	PJIMHBMA_00104
+5799	5335	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00104
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00104
+6250	5840	gene
+			locus_tag	PJIMHBMA_00105
+6250	5840	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00105
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00105
+7194	6247	gene
+			locus_tag	PJIMHBMA_00106
+7194	6247	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00106
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00106
+7553	7194	gene
+			locus_tag	PJIMHBMA_00107
+7553	7194	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00107
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00107
+7862	7659	gene
+			locus_tag	PJIMHBMA_00108
+7862	7659	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00108
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00108
+>Feature gnl|X|PJIMHBMA_10
+51	647	gene
+			locus_tag	PJIMHBMA_00109
+51	647	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00109
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00109
+644	1969	gene
+			locus_tag	PJIMHBMA_00110
+644	1969	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00110
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00110
+1976	2731	gene
+			locus_tag	PJIMHBMA_00111
+1976	2731	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00111
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00111
+2841	3401	gene
+			locus_tag	PJIMHBMA_00112
+2841	3401	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00112
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00112
+3408	4355	gene
+			locus_tag	PJIMHBMA_00113
+3408	4355	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00113
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00113
+4399	4860	gene
+			locus_tag	PJIMHBMA_00114
+4399	4860	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00114
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00114
+4862	5209	gene
+			locus_tag	PJIMHBMA_00115
+4862	5209	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00115
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00115
+5229	5507	gene
+			locus_tag	PJIMHBMA_00116
+5229	5507	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00116
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00116
+5504	5875	gene
+			locus_tag	PJIMHBMA_00117
+5504	5875	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00117
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00117
+5927	6559	gene
+			locus_tag	PJIMHBMA_00118
+5927	6559	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00118
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00118
+6587	6883	gene
+			locus_tag	PJIMHBMA_00119
+6587	6883	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00119
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00119
+6982	7269	gene
+			locus_tag	PJIMHBMA_00120
+6982	7269	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	PJIMHBMA_00120
+			product	unannotated protein
+			protein_id	gnl|X|PJIMHBMA_00120

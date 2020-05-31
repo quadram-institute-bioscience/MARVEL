@@ -1,0 +1,525 @@
+#!/usr/bin/env python3
+# coding: utf-8
+
+#  April, 9th 2019
+## This is the MARVEL Pipeline for analysis and retrieaval of Viral Long sequences
+## This is a python second-half version, which receives bins as input
+# Developed by Deyvid Amgarten
+# Creative commons
+
+# May 29 2020
+# conda create -n marvel-2 -y -c conda-forge bioconda prokka scikit-learn=0.21.3 numpy scipy biopython
+# [v.0.2 updated by Andrea Telatin for integration with other scripts]
+# - Bug fixes: 
+#       prokka not found wasn't catched; 
+#       run from different directory than installation; 
+#       support for paths with spaces (in progress)
+#       crash if input dir has mixed extensions (fa and fasta)
+# - new functions: run_cmd(), time_stamp(), fix_path(), print_msg(),
+# - removing some intermediates
+# - added options: -d, -o, -v, -f, -c
+# - check programs at startup
+# - improved feedback and colors
+
+
+# Import required Python modules
+import numpy as np
+from   Bio import SeqIO
+import re
+import sys
+import os
+import subprocess
+from   collections import Counter
+from   pprint import pprint
+import pickle
+import datetime
+import sklearn.ensemble
+import warnings
+import argparse
+import shlex
+
+
+samples = {}
+
+script_version = '0.2'
+script_dir = os.getcwd()
+
+# Default database dir
+if os.path.isdir(script_dir +'/models/'):
+    def_db_dir = script_dir +'/models/'
+elif os.path.isdir(script_dir +'/../marvel_db/'):
+    def_db_dir = script_dir + '/../marvel_db/'
+else:
+    def_db_dir = None
+
+
+class bcolors:
+    HEADER  = '\033[95m'
+    OKBLUE  = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL    = '\033[91m'
+    RESET   = '\033[0m'
+    BOLD    = '\033[1m'
+    UNDERLINE = '\033[4m'
+# Function declarations
+
+# Return timestamp (no spaces)
+def time_stamp():
+    dateTimeObj = datetime.datetime.now()
+    return f"{dateTimeObj.year}-{dateTimeObj.month}-{dateTimeObj.day}_{dateTimeObj.hour}:{dateTimeObj.minute}"
+
+
+# Add directory trailing slash [proch]
+def fix_path(dir):
+    if not re.search('/$', dir):
+        return dir + '/'
+    else:
+        return dir
+
+# Print to STDERR [proch]
+def print_msg(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+
+# Print to STDERR [proch]
+def debug(text, **kwargs):
+    if args.debug:
+        print_msg(text)
+
+
+
+
+# Check if file exists [proch]
+def check_files(filenames):
+    errors = 0
+    for file in filenames:
+        file = Path(file)
+        if not file.is_file():
+            print_msg("ERROR: File <{}> is not a file.".format(file))
+            errors += 1
+    if errors > 0:
+        return 0
+    else:
+        return 1
+
+# Show citation
+def display_citation():
+    print('Please cite:\nAmgarten DE, Braga LP, Da Silva AM, Setubal JC. MARVEL, a Tool for Prediction of Bacteriophage Sequences in Metagenomic Bins. Frontiers in Genetics. 2018;9:304.')
+
+
+# Auxiliary function to kmer_frequencies
+def chunks(l, n):
+    for i in range(0, len(l) - (n - 1)):
+        yield l[i:i + n]
+
+
+# Calculate kmer frequencies
+def kmer_frequency(dna, kmer):
+    freq = {}
+    freq.update(Counter(chunks(dna, 3)))  # update with counter of dinucleotide
+    if kmer in freq:
+        for each in freq:
+            freq[each] = freq[each] / len(dna)
+        return (freq[kmer])
+    else:
+        return 0
+
+
+# Run shell command
+def run_cmd(command_string, title=''):
+    if args.verbose:
+        print_msg(f"{bcolors.OKBLUE}# Running external command {title}{bcolors.RESET}")
+    debug(f"# {command_string}");
+
+    try:
+        cmd = subprocess.run(shlex.split(command_string, posix=False))
+        if cmd.returncode != 0:
+            print_msg('NON-ZERO EXIT: executing shell command:\n{}\n{}'.format(command_string, cmd.stderr))
+            exit(1)
+    except Exception as e:
+        print_msg(f'EXCEPTION: Error executing:\n{command_string}\nException: {e}')
+        exit(1)
+
+    
+# Run prokka
+def run_prokka(contigs_fasta, in_dir, out_dir, threads):
+    # Check the fasta format
+    prefix = remove_fasta_extension(contigs_fasta)
+
+    samples[prefix] = contigs_fasta
+  
+    # Full command line for prokka
+    prokka_params = '--kingdom Viruses --centre X --compliant --gcode 11 --force --quiet --fast --norrna --notrna --cdsrnaolap --noanno '
+    prokka_output_dir = out_dir + 'prokka/' + str(prefix)
+    command_line = ( 'perl ' + script_dir + '/marvel_prokka ' + prokka_params + ' --cpus ' + threads + ' --prefix prokka_results_' + str(prefix) + ' --outdir ' + prokka_output_dir + '  ' + in_dir + str(contigs_fasta) ).split()
+    debug( ' '.join(command_line) )
+    prokka = subprocess.run(command_line, stdout=subprocess.DEVNULL)
+    
+    # Check with prokka run smothly [proch: non zero status captured]
+    if prokka.returncode != 0:
+        print_msg(bcolors.FAIL + "ERROR: Prokka may not be correctly installed. Reported error:" + bcolors.RESET)
+        print_msg(prokka.stderr)
+        exit(prokka.returncode)
+    
+    if args.keep_intermediates:
+        run_cmd(f'rm {out_dir}prokka/prokka_results_{prefix}.fsa {out_dir}prokka/prokka_results_{prefix}.fna')
+
+# Get prefix from bins
+def remove_fasta_extension(bin_fasta_file):
+#    try:
+#        match = re.search(r'(\.fa.*)$',f, re.IGNORECASE)
+#        ext = match.group(1)   
+    return re.sub(r'\.fa(sta)?', '', bin_fasta_file)
+
+# Get file extension (fasta)
+def get_fasta_ext(f):
+    try:
+        match = re.search(r'(\.fa.*)$',f, re.IGNORECASE)
+        debug(f"[get_fasta_ext] {f} -> {match.group(1)} ")
+        return match.group(1)
+    except Exception as e:
+        print_msg(f"[get_fasta_ext] error: {f} was not matched as fasta")
+
+
+
+# Extract features from genbank record and prepare vector of features
+def extract_features(record):
+    # iterate each feature
+    count = 0
+    sum_cds_length = 0
+    strand_shift = 0
+    non_coding_spacing = []
+    for feature in record.features:
+        # This is a modification for erroneus translations
+        if feature.type == "CDS":
+            if 'translation' in feature.qualifiers:
+                if re.search('\w\*', str(feature.qualifiers['translation'])) is None:
+                    count += 1
+                    start = feature.location.start
+                    end = feature.location.end
+                    sum_cds_length += (end - start)
+                    if count == 1:
+                        strand_prev = feature.location.strand
+                        end_prev = end
+                    else:
+                        non_coding_spacing.append(start - end_prev)
+                        if strand_prev != feature.location.strand:
+                            strand_shift += 1
+                    end_prev = end
+                    strand_prev = feature.location.strand
+            else:
+                print_msg('WARNING: Prokka predicted a CDS, but there is no translation. Record ID: ',record.id)
+
+    if len(non_coding_spacing) > 1:
+        density = count / (len(record.seq) / 1000)
+        #mean_gene_size = sum_cds_length / count
+        sum_spacing = 0
+        for i in non_coding_spacing:
+            sum_spacing += i
+        #mean_spacing_size = sum_spacing / (len(non_coding_spacing) - 1)
+        #ATG_freq = kmer_frequency(str(record.seq), 'ATG')
+        # Return mean size of non conding regions and the density of genes
+        # print_msg(record.id, [mean_spacing_size, density, mean_gene_size, strand_shift, '/', count, flag])
+        return ([density, strand_shift / count])
+    else:
+        #warnings_handle.write("WARNING:" + record.id + " has 1 or zero appropriate CDS features.")
+        print_msg('WARNING: '+record.id+' has 1 or zero appropriate CDS features (those are important for prediction).')
+
+
+###
+### Main code
+###
+
+# Set arguments
+# Modification to use argparse
+parser = argparse.ArgumentParser(description='Predic phage draft genomes in metagenomic bins.')
+parser.add_argument('-i', '--input-dir', action="store", 
+    dest="input_folder", help='Path to a folder containing metagenomic bins in .fa or .fasta format')
+parser.add_argument('-t', '--threads', action="store", 
+    dest="threads", default='1', help='Number of CPU threads to be used by Prokka and hmmscan (default=1)')
+parser.add_argument('-o', '--output-dir', action="store", 
+    dest="outdir",  default=None, help='Output directory')
+parser.add_argument('-d', '--db', action="store", 
+    dest="databasedir",  default=def_db_dir, help='Database directory')
+parser.add_argument('-f', '--force', action="store_true", 
+    dest="force",  help='Force overwrite')
+parser.add_argument('-v', '--verbose', action="store_true", 
+    dest="verbose",  help='Print verbose output')
+parser.add_argument('--debug', action="store_true", 
+    dest="debug",  help='Enable debug mode')
+parser.add_argument('--keep', action="store_true", 
+    dest="keep_intermediates",  help='Keep all intermediate files')
+parser.add_argument('-c', '--cite', action="store_true", 
+    dest="cite",  help='Show citations')
+
+args = parser.parse_args()
+
+if not args.debug:
+    warnings.filterwarnings("ignore") 
+else:
+    pass
+
+# Show citation
+if args.cite:
+    display_citation()
+    exit()
+
+# Check required parameters
+if (args.input_folder == None or args.outdir == None):
+    print_msg("Required parameters: -i [Input_Dir_with_Bins] -o [Output_Dir]")
+    exit()
+
+
+# Input variables
+input_folder    = fix_path(args.input_folder)
+output_folder   = fix_path(args.outdir)
+threads         = args.threads
+database_folder = fix_path(args.databasedir)
+
+
+# Greeting message
+print_msg(f"{bcolors.BOLD}Welcome to MARVEL{bcolors.RESET}")
+if args.verbose:   
+    print_msg('Please cite: Amgarten DE, Braga LP, Da Silva AM, Setubal JC. MARVEL, a Tool for Prediction of Bacteriophage Sequences in Metagenomic Bins. Frontiers in Genetics. 2018;9:304.')
+
+# Verify databases
+if not os.path.isfile(database_folder + '/all_vogs_hmm_profiles_feb2018.hmm'):
+    print_msg(f"{bcolors.FAIL}ERROR: Your database and models are not set or not found in {database_folder}.{bcolors.RESET}")
+    print_msg('Please, run: download_and_set_models.py')
+    exit(1)
+
+# Verify outdir
+if not os.path.isdir(output_folder):
+    try:
+        os.mkdir(output_folder)
+    except Exception as e:
+        print_msg(f"{bcolors.FAIL}Unable to create directory {output_folder}.{bcolors.RESET}")
+        exit(1)
+else:
+    if args.force:
+        run_cmd(f'rm -rf "{output_folder}"', title='(remove files)')
+        run_cmd(f'mkdir -p "{output_folder}"')
+    else:
+        print_msg(f"{bcolors.FAIL}Output directory already exists: {output_folder}.{bcolors.RESET}")
+        exit(1)
+
+
+
+
+
+# Take the input folder and list all multifasta (bins) contained inside it
+list_bins_temp = os.listdir(input_folder)
+list_bins = []
+count_bins = 0
+# Empty folder
+if list_bins_temp == []:
+    print_msg('ERROR: Input folder is empty. Exiting...')
+    quit()
+else:
+    for fasta_bin_file in list_bins_temp:
+        if re.search(r'.fa(sta)?$', fasta_bin_file, re.IGNORECASE):
+            list_bins.append(fasta_bin_file)
+            count_bins += 1
+        # elif re.search('.fa$', fasta_bin_file, re.IGNORECASE):
+        #     list_bins.append(fasta_bin_file)
+        #     count_bins += 1
+
+if count_bins == 0:
+    print_msg('ERROR: There is no valid bin inside the input folder (%s).\nBins should be in \'.fasta\' or \'.fa\' format.\nExiting...'%input_folder)
+    quit()
+
+print_msg(' - Checked the input folder and found {} bins.'.format(count_bins) )
+
+
+
+#####
+# PROKKA
+#####
+# Running prokka for all the bins multfasta files in input folder
+# Perform a check in each bin, then call the execute_prokka function individually
+# It may take awhile
+count_prokka = 0
+print_msg(f"{bcolors.BOLD}Starting PROKKA{bcolors.RESET} [{time_stamp()}]")
+for binn in list_bins:
+    # Verify bin size
+    len_bin = 0
+    for record in SeqIO.parse(input_folder + binn, 'fasta'):
+        len_bin += len(record.seq)
+    #FIX: If a bin is too short, skip it
+    if len_bin < 2000:
+        print_msg('[!] MARVEL has found a bin, which is too short to code proteins (<2000pb). As CDSs are an import feature for MARVEL, we will be skipping this bin: '+binn)
+        continue
+    run_prokka(binn, input_folder, output_folder, threads)
+    count_prokka += 1
+    if count_prokka % 10 == 0:
+        print_msg('* Done with %d bins...' % count_prokka)
+
+
+####
+# HMM SEARCHES
+####
+
+print_msg(f"{bcolors.BOLD}Starting HMM scan{bcolors.RESET} [{time_stamp()}]")
+#print_msg(str(datetime.datetime.now()))
+# Create a new results folder for hmmscan output
+try:
+    os.stat(output_folder + '/hmmscan/')
+except:
+    os.mkdir(output_folder + '/hmmscan/')
+
+# Call HMMscan to all bins
+prop_hmms_hits = {}
+count_hmm = 0
+for binn in list_bins:
+    #FIX: If a bin is too short, skip it
+    len_bin = 0
+    for record in SeqIO.parse(input_folder + binn, 'fasta'):
+        len_bin += len(record.seq)
+    if len_bin < 2000:
+        continue
+    # Prefix for naming results
+    print_msg(f" - HMM scan for {binn}")
+    prefix = remove_fasta_extension(binn)
+    command_line_hmmscan = 'hmmscan -o ' + output_folder + '/hmmscan/' + prefix + '_hmmscan.out --cpu ' + threads + ' --tblout ' + output_folder + '/hmmscan/' + prefix + '_hmmscan.tbl --noali ' + database_folder + '/all_vogs_hmm_profiles_feb2018.hmm ' + output_folder + '/prokka/' + prefix + '/prokka_results_' + prefix + '.faa'
+    # In case hmmscan returns an error
+    run_cmd(command_line_hmmscan, title='(HMM scan)')
+    
+    count_hmm += 1
+    # Iteration control
+    if count_hmm % 25 == 0:
+        print_msg('Done with %d bins HMM searches...' % count_hmm)
+    # Parse hmmscan output files and find out which bins have less than 10% of their proteins
+    # without any significant hits (10e-10)
+    num_proteins_bin = 0
+    with open(output_folder + '/prokka/' + prefix + '/prokka_results_' + prefix + '.faa', 'r') as faa:
+        for line in faa:
+            if re.search('^>', line):
+                num_proteins_bin += 1
+    dic_matches = {}
+    with open(output_folder + '/hmmscan/' + prefix + '_hmmscan.tbl', 'r') as hmmscan_out:
+        for line in hmmscan_out:
+            match = re.search('^VOG\d+\s+-\s+(\S+)\s+-\s+(\S+)\s+.+$', line)
+            if match:
+                if match.group(1) not in dic_matches:
+                    dic_matches[match.group(1)] = float(match.group(2))
+    # Take the proportion of proteins matching the pVOGs and store in a dictionary
+    i_sig = 0
+    for key in dic_matches:
+        if dic_matches[key] <= 1e-10:
+            i_sig += 1
+    prop_hmms_hits[prefix] = i_sig / num_proteins_bin
+
+###
+# Machine learning prediction of viral bins
+###
+
+# Go for each bin and extract relevant features from respective genbank files
+# Final feature vector is "array_bins"
+
+print_msg(f'{bcolors.BOLD}Extracting features from bins{bcolors.RESET} [{time_stamp()}]')
+data_bins = []
+data_bins_index = []
+# Temporary fix: Some GBL files are broken
+# Verify this
+
+# Iteration for bins
+count_pred = 0
+for bins in list_bins:
+    #FIX: If a bin is too short, skip it.
+    len_bin = 0
+    for record in SeqIO.parse(input_folder + bins, 'fasta'):
+        len_bin += len(record.seq)
+    if len_bin < 2000:
+        continue
+    print_msg(f" - Analyzing bins: {bins}")
+    count_pred += 1
+    prefix = remove_fasta_extension(bins)
+    sub_data_bins = []
+    #FIX: Check whether prokka generated a .gbk or .gbf file
+    if os.path.isfile(output_folder + '/prokka/' + prefix + '/prokka_results_' + prefix + '.gbk'):
+        file_name = output_folder + '/prokka/' + prefix + '/prokka_results_' + prefix + '.gbk'
+    else:
+        file_name = output_folder + '/prokka/' + prefix + '/prokka_results_' + prefix + '.gbf'
+    # GBK File with gene prediction
+    #file_name = input_folder + '/prokka/' + prefix + '/prokka_results_' + prefix + '.gbk'
+    for record in SeqIO.parse(file_name, "genbank"):
+        # Extract_features still take the class as an argument
+        # Sending only the record now
+        temp_list = extract_features(record)
+        if temp_list is None:
+            pass
+        else:
+            sub_data_bins.append(temp_list)
+    ###
+    if not sub_data_bins:
+        continue
+    sub_data_bins_array = np.array(sub_data_bins)
+    mean_for_bin = list(np.mean(sub_data_bins_array, axis=0))
+    ####
+    # Append here, the fifth feature: proportions of hmm hits
+    mean_for_bin.append(prop_hmms_hits[prefix])
+    data_bins.append(mean_for_bin)
+    data_bins_index.append(prefix)
+array_bins = np.array(data_bins, dtype=float)
+print_msg(' - Extracted features from', len(array_bins), 'bins')
+
+# Load RFC model from file
+
+
+print_msg(f'{bcolors.BOLD}Doing the machine learning prediction{bcolors.RESET} [{time_stamp()}]')
+pkl_filename = database_folder + "/pickle_model_rfc_trained_bins8k_refseq_all_3features_den_stran_prophitshmm.pkl"
+with open(pkl_filename, 'rb') as file:
+    pickle_model = pickle.load(file)
+
+# Predict wether bins are from phage or other organisms
+y_test_predicted_pickle = pickle_model.predict(array_bins[:, ])
+
+# Assess the probability of the classification
+y_test_prob = pickle_model.predict_proba(array_bins[:, ])
+
+# Retrieve bins predicted as phages
+# 0.5 will be the threshold of probability for the class 1
+bins_predicted_as_phages = []
+i = 0
+is_there_phages = 0
+for pred in y_test_prob[:, 1]:
+    if pred >= 0.7:
+        if is_there_phages == 0:
+            print_msg(f"{bcolors.OKGREEN} - Found phages in this sample{bcolors.RESET}")
+            print_msg(" - Bins predicted as phages and probabilities according to Random Forest algorithm:")
+            is_there_phages = 1
+        bins_predicted_as_phages.append(data_bins_index[i])
+        print_msg("   - ", data_bins_index[i], "-> ",round(pred*100,2),"%")
+        # print_msg(pred, data_bins_index[i], array_bins[i])
+    i += 1
+
+### Alternative way: Not using probability
+# bins_predicted_as_phages = []
+# i = 0
+# for pred in y_test_predicted_pickle:
+#    if pred == 1:
+#        bins_predicted_as_phages.append(data_bins_index[i])
+#    i += 1
+
+
+print_msg(' - Finished Machine learning predictions!\n')
+#print_msg(str(datetime.datetime.now()))
+# Just make sure to end the program closing the warnings filehandle
+#warnings_handle.close()
+
+if is_there_phages == 1:
+    try:
+        os.stat(output_folder + '/phage_bins')
+    except:
+        os.mkdir(output_folder + '/phage_bins')
+
+
+    for bin_phage in bins_predicted_as_phages:
+        debug(f"# bin phage (filename without extension): {bin_phage}")
+        source = input_folder + samples[bin_phage]
+        run_cmd('cp ' + source + ' ' + output_folder + '/phage_bins/' + bin_phage + '.fasta', title='(copy files)')
+    print_msg(' - Bins predicted as phages are in the folder:', output_folder + 'phage_bins/')
+else:
+    print_msg(" - We did not find any phage bins in this sample.")
+
+
