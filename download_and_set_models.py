@@ -12,6 +12,9 @@ import re
 import sys
 import subprocess
 
+script_dir = os.getcwd()
+repository = 'https://github.com/quadram-institute-bioscience/MARVEL/raw/master/models/'
+
 
 # Print to STDERR [proch]
 def print_msg(*args, **kwargs):
@@ -36,8 +39,6 @@ if len(sys.argv) == 3:
 else:
     tmp_dir = fix_path('/tmp/')
 
-script_dir = os.getcwd()
-repository = 'https://github.com/quadram-institute-bioscience/MARVEL/raw/master/models/'
 print_msg("Destination directory: {}\nTemp directory: {}".format(db_dir, tmp_dir) )
 
 models = [ 'pickle_model_rfc_trained_bins8k_refseq_all_3features_den_stran_prophitshmm.pkl', 
