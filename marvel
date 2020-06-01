@@ -67,15 +67,19 @@ class bcolors:
 # Return timestamp (no spaces)
 def time_stamp():
     dateTimeObj = datetime.datetime.now()
-    return f"{dateTimeObj.year}-{dateTimeObj.month}-{dateTimeObj.day}_{dateTimeObj.hour}:{dateTimeObj.minute}"
+    return f"{dateTimeObj.year}-{dateTimeObj.month:02d}-{dateTimeObj.day:02d}_{dateTimeObj.hour:02d}:{dateTimeObj.minute:02d}"
 
 
-# Add directory trailing slash [proch]
+# REMOVE directory trailing slash [proch]
 def fix_path(dir):
-    if not re.search('/$', dir):
-        return dir + '/'
+    if re.search('/$', dir):
+        return re.sub(r'/+?$', '', dir)
     else:
         return dir
+    # if not re.search('/$', dir):
+    #     return dir + '/'
+    # else:
+    #     return dir
 
 # Print to STDERR [proch]
 def print_msg(*args, **kwargs):
@@ -150,15 +154,16 @@ def run_prokka(contigs_fasta, in_dir, out_dir, threads):
   
     # Full command line for prokka
     prokka_params = '--kingdom Viruses --centre X --compliant --gcode 11 --force --quiet --fast --norrna --notrna --cdsrnaolap --noanno '
-    prokka_output_dir = out_dir + 'prokka/' + str(prefix)
-    command_line = ( 'perl ' + script_dir + '/marvel_prokka ' + prokka_params + ' --cpus ' + threads + ' --prefix prokka_results_' + str(prefix) + ' --outdir ' + prokka_output_dir + '  ' + in_dir + str(contigs_fasta) ).split()
-    debug( ' '.join(command_line) )
-    prokka = subprocess.run(command_line, stdout=subprocess.DEVNULL)
+    prokka_output_dir = out_dir + '/prokka/' + str(prefix)
+    command_line = ( 'perl ' + script_dir + '/marvel_prokka ' + prokka_params + ' --cpus ' + threads + ' --prefix prokka_results_' + str(prefix) + ' --outdir ' + prokka_output_dir + '  ' + in_dir + '/' + str(contigs_fasta) ).split()
+    cmd_string = ' '.join(command_line)
+    debug( cmd_string  )
+    prokka = subprocess.run(command_line, stdout=subprocess.DEVNULL,  stderr=subprocess.DEVNULL)
     
     # Check with prokka run smothly [proch: non zero status captured]
     if prokka.returncode != 0:
-        print_msg(bcolors.FAIL + "ERROR: Prokka may not be correctly installed. Reported error:" + bcolors.RESET)
-        print_msg(prokka.stderr)
+        print_msg(bcolors.FAIL + "ERROR: Prokka may not be correctly installed." + bcolors.RESET)
+        print_msg(f"Errored command:\n{cmd_string}")
         exit(prokka.returncode)
     
     if args.keep_intermediates:
@@ -239,6 +244,10 @@ parser.add_argument('-t', '--threads', action="store",
     dest="threads", default='1', help='Number of CPU threads to be used by Prokka and hmmscan (default=1)')
 parser.add_argument('-o', '--output-dir', action="store", 
     dest="outdir",  default=None, help='Output directory')
+parser.add_argument('-m', '--min-len', action="store", 
+    dest="ctgminlen",  default=2000, help='Bin minimum size')
+parser.add_argument('-c', '--confidence', action="store", 
+    dest="confidence",  default=0.7, help='Confidence threshold')
 parser.add_argument('-d', '--db', action="store", 
     dest="databasedir",  default=def_db_dir, help='Database directory')
 parser.add_argument('-f', '--force', action="store_true", 
@@ -249,7 +258,7 @@ parser.add_argument('--debug', action="store_true",
     dest="debug",  help='Enable debug mode')
 parser.add_argument('--keep', action="store_true", 
     dest="keep_intermediates",  help='Keep all intermediate files')
-parser.add_argument('-c', '--cite', action="store_true", 
+parser.add_argument('--cite', action="store_true", 
     dest="cite",  help='Show citations')
 
 args = parser.parse_args()
@@ -276,6 +285,10 @@ output_folder   = fix_path(args.outdir)
 threads         = args.threads
 database_folder = fix_path(args.databasedir)
 
+debug(f"input: {input_folder}")
+debug(f"output: {output_folder}")
+
+debug(f"database: {database_folder}")
 
 # Greeting message
 print_msg(f"{bcolors.BOLD}Welcome to MARVEL{bcolors.RESET}")
@@ -297,8 +310,7 @@ if not os.path.isdir(output_folder):
         exit(1)
 else:
     if args.force:
-        run_cmd(f'rm -rf "{output_folder}"', title='(remove files)')
-        run_cmd(f'mkdir -p "{output_folder}"')
+        run_cmd(f'rm -rf "{output_folder}"/*', title='(remove files)')
     else:
         print_msg(f"{bcolors.FAIL}Output directory already exists: {output_folder}.{bcolors.RESET}")
         exit(1)
@@ -343,16 +355,16 @@ print_msg(f"{bcolors.BOLD}Starting PROKKA{bcolors.RESET} [{time_stamp()}]")
 for binn in list_bins:
     # Verify bin size
     len_bin = 0
-    for record in SeqIO.parse(input_folder + binn, 'fasta'):
+    for record in SeqIO.parse(input_folder + '/' + binn, 'fasta'):
         len_bin += len(record.seq)
     #FIX: If a bin is too short, skip it
-    if len_bin < 2000:
-        print_msg('[!] MARVEL has found a bin, which is too short to code proteins (<2000pb). As CDSs are an import feature for MARVEL, we will be skipping this bin: '+binn)
+    if len_bin < args.ctgminlen:
+        print_msg(f'[!] MARVEL has found a bin, which is too short to code proteins (<{args.ctgminlen}bp). As CDSs are an import feature for MARVEL, we will be skipping this bin: {binn}')
         continue
     run_prokka(binn, input_folder, output_folder, threads)
     count_prokka += 1
     if count_prokka % 10 == 0:
-        print_msg('* Done with %d bins...' % count_prokka)
+        print_msg(f' - Done with {count_prokka} bins...')
 
 
 ####
@@ -373,9 +385,9 @@ count_hmm = 0
 for binn in list_bins:
     #FIX: If a bin is too short, skip it
     len_bin = 0
-    for record in SeqIO.parse(input_folder + binn, 'fasta'):
+    for record in SeqIO.parse(input_folder + '/' + binn, 'fasta'):
         len_bin += len(record.seq)
-    if len_bin < 2000:
+    if len_bin < args.ctgminlen:
         continue
     # Prefix for naming results
     print_msg(f" - HMM scan for {binn}")
@@ -427,9 +439,9 @@ count_pred = 0
 for bins in list_bins:
     #FIX: If a bin is too short, skip it.
     len_bin = 0
-    for record in SeqIO.parse(input_folder + bins, 'fasta'):
+    for record in SeqIO.parse(input_folder + '/' + bins, 'fasta'):
         len_bin += len(record.seq)
-    if len_bin < 2000:
+    if len_bin < args.ctgminlen:
         continue
     print_msg(f" - Analyzing bins: {bins}")
     count_pred += 1
@@ -483,7 +495,7 @@ bins_predicted_as_phages = []
 i = 0
 is_there_phages = 0
 for pred in y_test_prob[:, 1]:
-    if pred >= 0.7:
+    if pred >= args.confidence:
         if is_there_phages == 0:
             print_msg(f"{bcolors.OKGREEN} - Found phages in this sample{bcolors.RESET}")
             print_msg(" - Bins predicted as phages and probabilities according to Random Forest algorithm:")
@@ -516,7 +528,7 @@ if is_there_phages == 1:
 
     for bin_phage in bins_predicted_as_phages:
         debug(f"# bin phage (filename without extension): {bin_phage}")
-        source = input_folder + samples[bin_phage]
+        source = input_folder + '/' + samples[bin_phage]
         run_cmd('cp ' + source + ' ' + output_folder + '/phage_bins/' + bin_phage + '.fasta', title='(copy files)')
     print_msg(' - Bins predicted as phages are in the folder:', output_folder + 'phage_bins/')
 else:
