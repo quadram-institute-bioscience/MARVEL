@@ -1,72 +1,51 @@
 
-# MARVEL
+# MARVEL Fork
 **Metagenomic Analysis and Retrieval of Viral Elements**
 
-MARVEL is a pipeline for recovery of complete phage genomes from whole community shotgun metagenomic sequencing data.  
+[![Build Status](https://travis-ci.org/quadram-institute-bioscience/MARVEL.svg?branch=master)](https://travis-ci.org/quadram-institute-bioscience/MARVEL)
 
-Main script:
-   * **marvel_bins.py** - Machine learning prediction of phage bins
-  
-Auxiliary script:
-   * **generate_bins_from_reads.py** - Generates metagenomic bins, given Illumina sequencing reads
-
-
-### Dependencies
-
-To create a conda environment: 
-```
-conda create -n marvel numpy scikit-learn prokka
-```
-
-### Installing
-
-Getting MARVEL ready to run is as simple as clone this Github project or dowload and extract it to a directory inside you computer:
+### Usage
 
 ```
-git clone https://github.com/LaboratorioBioinformatica/MARVEL
+usage: marvel [-h] [-i INPUT_FOLDER] [-t THREADS] [-o OUTDIR] [-m CTGMINLEN]
+              [-c CONFIDENCE] [-d DATABASEDIR] [-f] [-v] [--debug] [--keep]
+              [--cite]
+
+Predic phage draft genomes in metagenomic bins.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT_FOLDER, --input-dir INPUT_FOLDER
+                        Path to a folder containing metagenomic bins in .fa or
+                        .fasta format
+  -t THREADS, --threads THREADS
+                        Number of CPU threads to be used by Prokka and hmmscan
+                        (default=1)
+  -o OUTDIR, --output-dir OUTDIR
+                        Output directory
+  -m CTGMINLEN, --min-len CTGMINLEN
+                        Bin minimum size (default=2000)
+  -c CONFIDENCE, --confidence CONFIDENCE
+                        Confidence threshold (default=0.7)
+  -d DATABASEDIR, --db DATABASEDIR
+                        Database directory (default: install_dir)
+  -f, --force           Force overwrite
+  -v, --verbose         Print verbose output
+  --debug               Enable debug mode
+  --keep                Keep all intermediate files
+  --cite                Show citations
 ```
-
-### Getting Started
-
-Inside the directory where MARVEL was extracted (or cloned), you will need to download and set the models. 
-This is required only once and it is simple. Just run:
-```
-python3 download_and_set_models.py [Destination_directory] [Temporary_Directory]
-```
-
-Now, to run MARVEL type:
-```
-python3 marvel_bins.py -i input_directory -o output_directory [-d database_directory] [-t num_threads]
-```
-
-Change 'input_directory' for the folder where bins are stored in fasta format and 'num_threads' for the number of CPU cores to be used. Several threads should be used for speed up prokka and hmm searches.  
-
-
-### Additional scripts
-
-MARVEL's main script receives metagenomic bins as input. However, we additionally provide a simple scrip which receives
-metagenomic reads (Illumina sequencing) and generates bins.
-[metaSpades](http://bioinf.spbau.ru/spades), [Bowtie2]() and [Metabat2](https://bitbucket.org/berkeleylab/metabat) are used for assembling, mapping and binning, respectively.  
-
-In case you want to generate the bins by yourself, we recommend two special parameters in the binning process: -m 1500 -s 10000. These parameters tell metabat to generate bins with contigs of at least 1500 bp and with a minimum total size of 10 kbp, which makes more sense when one is trying to retrieve viral genomes.  
-We can't stress enough that there are several tools for assembly and binning, which should be well-chosen according to
-the researcher's purposes. Our intention here is to facilitate the use of our tool.  
-
-```
-python3 generate_bins_from_reads.py -1 reads-R1.fastq -2 reads-R2.fastq -t num_threads
-```
-
-### Simulated RefSeq datasets for training and testing
-
-All the simulated datasets used for training and testing the Random Forest classifier, as well as predicted bins from composting samples were made available through this link:
-
-[Browse and Download datasets](http://projetos.lbi.iq.usp.br/metazoo/deyvid/datasets/) 
 
 ### Author
-[Deyvid Amgarten](https://sites.google.com/view/deyvid/english)  
+
+Original release by:
+
+* [Deyvid Amgarten](https://sites.google.com/view/deyvid/english)  
 This pipeline was written as part of my PhD thesis by the [Bioinformatics Graduate Program](https://www.ime.usp.br/en/bioinformatics/graduate) from the University of Sao Paulo, Brazil.
 
+Fork maintained and updated by:
 
+* Andrea Telatin, Quadram Institute Bioscience, Norwich, UK
 ### License
 
 This project is licensed under GNU license. Codes here may be used for any purposed or modified.  
