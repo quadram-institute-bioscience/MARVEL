@@ -7,8 +7,12 @@
 # Developed by Deyvid Amgarten
 # Creative commons
 
+# June 2 2020
+# [v.0.3 update by Andrea Telatin ]
+# - Changed 'fix_path' to remove trailing slash rather than adding it (to allow for "this"/* to work)
+# - Testing and Travis CI scripts
 # May 29 2020
-# conda create -n marvel-2 -y -c conda-forge bioconda prokka scikit-learn=0.21.3 numpy scipy biopython
+# conda create -n marvel-2 -y -c conda-forge -c bioconda prokka scikit-learn=0.21.3 numpy scipy biopython
 # [v.0.2 updated by Andrea Telatin for integration with other scripts]
 # - Bug fixes: 
 #       prokka not found wasn't catched; 
@@ -530,7 +534,7 @@ if is_there_phages == 1:
         debug(f"# bin phage (filename without extension): {bin_phage}")
         source = input_folder + '/' + samples[bin_phage]
         run_cmd('cp ' + source + ' ' + output_folder + '/phage_bins/' + bin_phage + '.fasta', title='(copy files)')
-    print_msg(' - Bins predicted as phages are in the folder:', output_folder + 'phage_bins/')
+    print_msg(' - Bins predicted as phages are in the folder:', output_folder + '/phage_bins/')
 else:
     print_msg(" - We did not find any phage bins in this sample.")
 
